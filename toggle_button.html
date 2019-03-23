@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BUTTON TOGGLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <style>
+                .register .nav-tabs{
+                    margin: -top:3%;
+                    border:none;
+                    background:#243df9; /*fond de couleur*/
+                    border-radius:1.5rem;
+                    width:56%;
+                    float:right;
+                }
+                .register .nav-tabs .nav-link{
+                    padding:2%;
+                    height: 34px;
+                    font-weight: 500;
+                    color:#fff;
+                    border-top-right-radius: 1.5rem;
+                    border-bottom-right-radius: 1.5rem;
+                }
+                
+                .register .nav-tabs .nav-link:hover{
+                    border:none;
+                }
+                .register .nav-tabs .nav-link.active{
+                   width:200px;
+                   color: #243df9;
+                   border:2px solid #243df9;
+                   border-top-left-radius: 1.5rem;
+                   border-bottom-left-radius: 1.5rem;
+                }
+                
+            </style>
+            
+            
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center"> Bootstrap toggle Button</h2>
+                <div class="container register">
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-toggle="tab" href="#">Allume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#">Eteint</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </div>
+    </body>
+</html>
